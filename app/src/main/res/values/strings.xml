@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">VSM Sarees</string>
+
+
+    <string name="company_name">Vision Silk Mills</string>
+    <string name="admin_phone_number">+919998537832</string>
+    <string name="intro_whatsapp_text">Hello,\nI would like to enquire about your products.\n\n-Sent from VSM for Android.</string>
+    <string name="about_company">VSM\'s business concept is to provide fashion and quality at the best rate possible. It was established in the year 2002.\nRelentlessly innovating since the day of establishment has not only helped us survive in the highly competitive market but also allowed us to grow! We provide all types of weaving sarees to cater all women across different cities.</string>
+    <string name="verification_status_text">Hello,\nI would like to enquire about the status of my account verification.</string>
+    <string name="contact_us_text">Hello, I would like to raise a query regarding my profile.</string>
+    <string name="company_location">H-13, Ring Rd, Surat Textile Market, New Textile Market, Surat, Gujarat 395002</string>
+    <string name="admin_email">visionsilkmills@gmail.com</string>
+    <string name="insta_account">\@visionsilkmills</string>
+    <string name="copyright_text">All images shown are a trademarked property of Vision Silk Mills</string>
+
+    <string name="country_code">+91</string>
+
+
+    <string name="bottom_collections_left_text">V.S.M\n\nSarees</string>
+    <string name="bottom_collections_right_text">Omjin\n\nSarees</string>
+    <string name="top_collections_text">NEWLY ARRIVED</string>
+
+    <string name="vsm_sarees">V.S.M Sarees</string>
+    <string name="vsm_weaves">Omjin Sarees</string>
+
+    <string name="about_us_text">About Us</string>
+    <string name="reach_us_text">Reach Us</string>
+
+    <string name="developer_credits">Designed and Developed by Replon Technologies LLP</string>
+    <string name="developer_email">replontech@gmail.com</string>
+    <string name="developer_website">https://www.replon.com</string>
+
+
+    <string name="add_to_cart_text">ADD TO CART</string>
+    <string name="price_text">Price:</string>
+    <string name="logout_text">Logout</string>
+
+    <string name="cart_header">Items To Enquire</string>
+    <string name="enquire_text">Enquire</string>
+    <string name="call_us_text">Call Us</string>
+
+    <string name="not_registered_text">Not Registered? Click Here</string>
+    <string name="register_text">Register</string>
+    <string name="profile_text">Profile</string>
+    <string name="verify_mobile_text">Verify Your Mobile Number</string>
+    <string name="send_approval_text">Send For Approval</string>
+    <string name="continue_browsing_text">Continue Browsing</string>
+    <string name="empty_cart">Your Cart is Empty.</string>
+
+    <string name="pending_text">Hello name,\nYour profile verification is pending.\nKindly wait for approval.</string>
+
+    <string name="queries_text"><u>Contact Us For Queries</u></string>
+    <string name="download_pdf">View PDF</string>
+    <string name="default_notification_channel_id">NOTIF</string>
+
+
+    <string-array name="india_states">
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Kashmir</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <!--    Firebase Catalogue Strings DO NOT CHANGE-->
+    <string name="catalogues">catalogues</string>
+    <string name="catalogue_image_url">catalogue_image_url</string>
+    <string name="date_created">date_created</string>
+    <string name="fabric">fabric</string>
+    <string name="home">home</string>
+    <string name="home_image_url">home_image_url</string>
+    <string name="home_text">home_text</string>
+    <string name="name">name</string>
+    <string name="packaging">packaging</string>
+    <string name="pieces">pieces</string>
+    <string name="price">price</string>
+    <string name="saree_image_url">saree_image_url</string>
+    <string name="saree_length">saree_length</string>
+    <string name="tag">tag</string>
+    <string name="type">type</string>
+    <string name="pdf_url">pdf_url</string>
+    <string name="video_url">video_url</string>
+    <string name="doc_ref">doc_ref</string>
+
+    <!--    Firebase Users Strings DO NOT CHANGE-->
+    
+    <string name="users">users</string>
+    <string name="city">city</string>
+    <string name="state">state</string>
+    <string name="company">company</string>
+    <string name="dealer">dealer</string>
+    <string name="gst">gst</string>
+    <string name="phone">phone</string>
+    <string name="name_user">name</string>
+
+
+
+
+
+
+
+</resources>

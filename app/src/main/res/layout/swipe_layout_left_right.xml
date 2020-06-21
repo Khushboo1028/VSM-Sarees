@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/ic_place_holder_catalog"
+        android:id="@+id/image_view"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fadedBlack20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/top_collections_text"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sf_republic_bold"
+        android:textSize="24dp"
+        android:padding="16dp"
+        android:background="@drawable/white_rounded_corners"
+        android:id="@+id/image_text"
+        android:visibility="gone"
+        />
+
+
+
+</FrameLayout>

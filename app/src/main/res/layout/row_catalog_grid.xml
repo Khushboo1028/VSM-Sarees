@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/catalog_card_background"
+        android:layout_marginHorizontal="6dp"
+        android:id="@+id/mainrel">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.7dp"
+            android:src="@drawable/ic_place_holder_catalog"
+            android:background="@drawable/catalog_card_background"
+            android:scaleType="centerCrop"
+            android:outlineProvider="background"
+            android:id="@+id/catalog_image"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_featured"
+            android:id="@+id/tag_image"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/catalog_image"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:maxLines="2"
+                android:lines="2"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:text="Kanjivaram Silks"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/hoefler_bold"
+                android:id="@+id/catalog_name"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:id="@+id/prices_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price: ₹ "
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/price_text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 x 500"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/catalog_price"/>
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightGrey"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/add_to_cart_linear_layout">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_to_cart_text"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/spd_semibold"
+                    android:id="@+id/add_to_cart_text"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_add_to_cart"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/add_to_cart_image"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

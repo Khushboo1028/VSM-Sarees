@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_designer_background"
+    android:layout_marginBottom="60dp"
+    tools:context=".AboutUs.AboutUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:id="@+id/mainrel">
+
+<!--            <ImageView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:src="@drawable/ic_whatsapp_white"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:id="@+id/logo"-->
+<!--                />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bodoni"
+                android:text="@string/company_name"
+                android:layout_marginTop="24dp"
+                android:id="@+id/company_name_text"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/company_name_text"
+                android:fontFamily="@font/hoefler_bold"
+                android:text="@string/about_us_text"
+                android:layout_marginTop="24dp"
+                android:id="@+id/about_us_text"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/about_us_text"
+                android:fontFamily="@font/hoefler_regular"
+                android:text="@string/about_company"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="12dp"
+                android:id="@+id/about_company_text"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/about_company_text"
+                android:fontFamily="@font/hoefler_bold"
+                android:text="@string/reach_us_text"
+                android:layout_marginTop="24dp"
+                android:id="@+id/reach_us_text"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reach_us_text"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/location_rel">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location_white"
+                    android:id="@+id/location_image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_location"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hoefler_regular"
+                    android:layout_marginStart="16dp"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/company_location_text"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location_rel"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/contact_rel">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_whatsapp_white"
+                    android:id="@+id/whatsapp_image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin_phone_number"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hoefler_regular"
+                    android:layout_marginStart="16dp"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/admin_phone_text"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_rel"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/email_rel">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_email_white"
+                    android:id="@+id/email_image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin_email"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hoefler_regular"
+                    android:layout_marginStart="16dp"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/admin_email_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_rel"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/insta_rel">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_insta_logo"
+                    android:id="@+id/insta_image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/insta_account"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hoefler_regular"
+                    android:layout_marginStart="16dp"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/insta_text"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/insta_rel"
+                android:layout_marginTop="36dp"
+                android:text="@string/copyright_text"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:fontFamily="@font/spd_regular"
+                android:layout_marginHorizontal="36dp"
+                android:id="@+id/copyright_text"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/copyright_text"
+                android:layout_marginBottom="36dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/developer_credits"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:fontFamily="@font/spd_semibold"
+                android:layout_marginHorizontal="36dp"
+                android:id="@+id/developer_credits"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

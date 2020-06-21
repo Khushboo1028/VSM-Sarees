@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Collections.CollectionsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainrel">
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:padding="16dp"-->
+<!--            android:background="@drawable/header_gradient"-->
+<!--            android:id="@+id/header_frame">-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:padding="16dp"
+            android:background="@drawable/header_gradient"
+            android:id="@+id/header_frame">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_name"
+                android:textSize="30dp"
+                android:layout_gravity="start|center_vertical"
+                android:fontFamily="@font/bodoni"
+                android:textColor="@color/black"
+                android:id="@+id/header_text"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_cart"
+                android:layout_toLeftOf="@id/profile_image"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/cart_image"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_profile"
+                android:layout_gravity="end|center_vertical"
+                android:layout_alignParentRight="true"
+                android:id="@+id/profile_image"/>
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="60dp"
+            android:layout_below="@id/header_frame"
+            android:weightSum="2"
+            >
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/frame_top">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/viewPagerTop"/>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/fadedBlack40"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/top_collections_text"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:fontFamily="@font/sf_republic_bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:padding="16dp"-->
+<!--                    android:background="@color/fadedBlack20"-->
+<!--                    />-->
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_below="@id/frame_top">
+
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/bottom_left_frame">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/viewPagerLeft"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="24dp"
+                        android:padding="18dp"
+                        android:gravity="center"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sf_republic_bold"
+                        android:background="@drawable/white_rounded_corners"
+                        android:text="@string/bottom_collections_left_text"
+                        android:id="@+id/text_left"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="100dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:background="@drawable/white_rounded_corners"
+                        android:src="@drawable/ic_vsm_sarees_coming_soon"
+                        android:visibility="gone"
+                        android:id="@+id/image_left_soon"
+                        />
+
+
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/bottom_right_frame">
+
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/viewPagerRight"/>
+
+                    <ImageView
+                        android:layout_width="124dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/white_rounded_corners"
+                        android:src="@drawable/omjin_logo"
+                        android:id="@+id/image_right"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="100dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:background="@drawable/white_rounded_corners"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_omjin_comin_soon"
+                        android:id="@+id/image_right_soon"
+                        />
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_designer_background"
+    tools:context=".Catalogue.CatalogViewActivity">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:paddingVertical="8dp"
+            android:id="@+id/header_rel">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_white"
+                android:id="@+id/back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_name"
+                android:textSize="30dp"
+                android:layout_toRightOf="@id/back"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/bodoni"
+                android:textColor="@color/white"
+                android:id="@+id/header_text"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/download_pdf"
+                android:layout_toLeftOf="@id/cart_image"
+                android:textSize="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/spd_medium"
+                android:textColor="@color/white"
+                android:id="@+id/download_pdf_text"/>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_cart_white"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/cart_image"
+                />
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header_rel"
+            android:id="@+id/nestedScrollView">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header_rel"
+            android:layout_marginTop="16dp"
+            android:id="@+id/mainrel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Banarasi Silk"
+                android:layout_centerHorizontal="true"
+                android:textSize="36dp"
+                android:layout_marginVertical="24dp"
+                android:fontFamily="@font/snell_bold"
+                android:textColor="@color/white"
+                android:id="@+id/catalog_name_text"/>
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/catalog_name_text"
+                android:id="@+id/player"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/player"
+                android:layout_marginTop="24dp"
+                android:padding="16dp"
+                android:id="@+id/innerrel">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/catalog_info_rel">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fabric:"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/hoefler_bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silk with jaalar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/hoefler_regular"
+                    android:textColor="@color/white"
+                    android:id="@+id/fabric_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saree Length:"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/hoefler_bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.30 m"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/hoefler_regular"
+                    android:textColor="@color/white"
+                    android:id="@+id/saree_length_text"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Packaging:"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/hoefler_bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Box Packing (8 x 1)"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="8dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/hoefler_regular"
+                        android:textColor="@color/white"
+                        android:id="@+id/packaging_text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pieces:"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/hoefler_bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="69"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="8dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/hoefler_regular"
+                        android:textColor="@color/white"
+                        android:id="@+id/pieces_text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/price_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price: "
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/hoefler_bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="69"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/hoefler_regular"
+                        android:textColor="@color/white"
+                        android:id="@+id/price_text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:weightSum="2"
+                    android:layout_marginTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="6dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:id="@+id/enquire_layout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_chat_white"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Enquire about it"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="8dp"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/hoefler_bold"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="6dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/add_to_cart_linear_layout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_add_to_cart_white"
+                            android:id="@+id/add_to_cart_image"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add to cart"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="8dp"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/hoefler_bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/add_to_cart_text"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_below="@id/catalog_info_rel"
+                android:scrollbars="vertical"
+                android:id="@+id/recycler_view"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

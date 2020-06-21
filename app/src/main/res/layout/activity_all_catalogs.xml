@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Collections.AllCollectionsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainrel">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/header_gradient"
+            android:id="@+id/header_rel">
+
+
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_back"
+                android:id="@+id/back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_name"
+                android:textSize="30dp"
+                android:layout_toRightOf="@id/back"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/bodoni"
+                android:textColor="@color/black"
+                android:id="@+id/header_text"/>
+
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_cart"
+                android:layout_gravity="end|center_vertical"
+                android:id="@+id/cart_image"/>
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_rel"
+            android:layout_below="@id/header_rel"
+            android:paddingVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/edittext_borders_lighter">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search Catalogues"
+                android:imeOptions="actionDone"
+                android:paddingStart="30dp"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:selectAllOnFocus="true"
+                android:textSize="18dp"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:fontFamily="@font/spd_regular"
+                android:layout_marginHorizontal="8dp"
+                android:id="@+id/search_field"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Price ↑"
+                android:textColor="@color/black"
+                android:layout_gravity="end"
+                android:fontFamily="@font/spd_medium"
+                android:textSize="20dp"
+                android:id="@+id/price_sort_text"/>
+
+
+
+
+        </FrameLayout>
+
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_rel"
+            android:columnWidth="190dp"
+            android:numColumns="2"
+            android:layout_marginTop="16dp"
+            android:scrollbarStyle="outsideInset"
+            android:verticalSpacing="48dp"
+            android:stretchMode="spacingWidthUniform"
+            android:textAlignment="center"
+            android:paddingBottom="16dp"
+            android:clipToPadding="false"
+            android:listSelector="@android:color/transparent"
+            android:id="@+id/grid_view"
+            />
+        
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>
