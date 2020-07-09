@@ -12,12 +12,7 @@
         android:layout_height="match_parent"
         android:id="@+id/mainrel">
 
-<!--        <FrameLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="80dp"-->
-<!--            android:padding="16dp"-->
-<!--            android:background="@drawable/header_gradient"-->
-<!--            android:id="@+id/header_frame">-->
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="72dp"
@@ -124,21 +119,16 @@
                         android:id="@+id/viewPagerLeft"/>
 
 
-                    <TextView
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:layout_marginBottom="24dp"
-                        android:padding="18dp"
-                        android:gravity="center"
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/sf_republic_bold"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="100dp"
+                        android:layout_marginHorizontal="40dp"
                         android:background="@drawable/white_rounded_corners"
-                        android:text="@string/bottom_collections_left_text"
-                        android:id="@+id/text_left"
+                        android:src="@drawable/vsm_sarees_logo"
+                        android:id="@+id/image_left"
                         />
-
 
                     <ImageView
                         android:layout_width="wrap_content"

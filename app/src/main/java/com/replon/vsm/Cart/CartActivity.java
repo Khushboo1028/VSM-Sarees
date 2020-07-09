@@ -181,7 +181,7 @@ public class CartActivity extends AppCompatActivity {
                 final ContentsCatalogue contents = cartList.get(i);
 
                 Glide.with(getApplicationContext()).load(contents.getCatalogue_image_url())
-                        .placeholder(R.drawable.ic_place_holder_catalog).into(holder.catalog_image);
+                        .into(holder.catalog_image);
 
                 holder.catalog_name.setText(capitalize(contents.getName()));
                 holder.length.setText(contents.getSaree_length());

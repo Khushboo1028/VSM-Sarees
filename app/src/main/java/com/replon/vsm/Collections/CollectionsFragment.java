@@ -63,8 +63,7 @@ public class CollectionsFragment extends Fragment {
     ArrayList<ContentsUser> userArrayList;
 
 
-    ImageView profile,cart_image,img_vsm_Coming_soon, img_omjin_logo, img_omjin_coming_soon;
-    TextView vsm_left_text;
+    ImageView profile,cart_image,img_vsm_Coming_soon, img_omjin_logo, img_omjin_coming_soon, image_left;
 
     FrameLayout bottom_right_frame,bottom_left_frame,frame_top;
     String phone,name,company_name,gst_number, city,state;
@@ -84,7 +83,7 @@ public class CollectionsFragment extends Fragment {
     CustomSwipeAdapterRight customSwipeAdapterRight;
     private int current_positionTop=0,current_positionLeft=0,current_positionRight=0;
 
-    Timer timerTop,timerLeft,timerRight;
+    Timer timerTop;
 
 
     public CollectionsFragment() {
@@ -286,10 +285,10 @@ public class CollectionsFragment extends Fragment {
         frame_top=(FrameLayout)view.findViewById(R.id.frame_top);
         bottom_left_frame=(FrameLayout)view.findViewById(R.id.bottom_left_frame);
         bottom_right_frame=(FrameLayout)view.findViewById(R.id.bottom_right_frame);
-        vsm_left_text = (TextView) view.findViewById(R.id.text_left);
         img_vsm_Coming_soon = (ImageView) view.findViewById(R.id.image_left_soon) ;
         img_omjin_logo = (ImageView) view.findViewById(R.id.image_right) ;
         img_omjin_coming_soon = (ImageView) view.findViewById(R.id.image_right_soon) ;
+        image_left = (ImageView) view.findViewById(R.id.image_left);
 
 
         db=FirebaseFirestore.getInstance();
@@ -496,10 +495,10 @@ public class CollectionsFragment extends Fragment {
                     }
 
                     if(sareeImageUrlList.size() == 0){
-                        vsm_left_text.setVisibility(View.GONE);
+                        image_left.setVisibility(View.GONE);
                         img_vsm_Coming_soon.setVisibility(View.VISIBLE);
                     }else{
-                        vsm_left_text.setVisibility(View.VISIBLE);
+                        image_left.setVisibility(View.VISIBLE);
                         img_vsm_Coming_soon.setVisibility(View.GONE);
                     }
 
